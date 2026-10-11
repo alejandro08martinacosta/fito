@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Fito — Entrena, come, descansa y progresa</title>
+<meta name="description" content="Entrenador y nutrición con IA, pensado para Latinoamérica. Conoce el encebollado, el bolón y el seco de pollo, y explica por qué te manda cada serie.">
+<meta property="og:title" content="Fito — Entrena, come, descansa y progresa">
+<meta property="og:description" content="Entrenador y nutrición con IA, pensado para Latinoamérica.">
+<meta property="og:type" content="website">
+<style>
+  :root {
+    color-scheme: light;
+    --fondo: #FBFBFA;
+    --superficie: #FFFFFF;
+    --borde: #E4E6E4;
+    --texto: #1A1D1C;
+    --texto-suave: #5A615E;
+    --texto-tenue: #858B88;
+    --marca: #1C9997;
+    --marca-suave: #EAF5F4;
+    --exito: #1C996F;
+    --radio: 14px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --fondo: #0F1211; --superficie: #171B1A; --borde: #2A302E;
+      --texto: #EDF0EF; --texto-suave: #A7AFAC; --texto-tenue: #7C8481;
+      --marca: #3FBAB8; --marca-suave: #142A29; --exito: #3FD6A0;
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --fondo: #0F1211; --superficie: #171B1A; --borde: #2A302E;
+    --texto: #EDF0EF; --texto-suave: #A7AFAC; --texto-tenue: #7C8481;
+    --marca: #3FBAB8; --marca-suave: #142A29; --exito: #3FD6A0;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--fondo); color: var(--texto);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 16px; line-height: 1.65; -webkit-text-size-adjust: 100%;
+  }
+  .envoltura { max-width: 46rem; margin: 0 auto; padding-inline: 16px; }
+
+  header { padding-block: 64px 40px; }
+  .marca {
+    display: inline-block; font-size: 12px; font-weight: 700; letter-spacing: 0.12em;
+    text-transform: uppercase; color: var(--marca); margin-bottom: 14px;
+  }
+  h1 {
+    font-size: clamp(2rem, 7vw, 3rem); line-height: 1.1; margin: 0 0 16px;
+    letter-spacing: -0.03em; text-wrap: balance;
+  }
+  .entrada { font-size: clamp(1.05rem, 2.6vw, 1.2rem); color: var(--texto-suave); margin: 0 0 24px; text-wrap: pretty; }
+  .estado {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: var(--marca-suave); color: var(--marca);
+    border-radius: 999px; padding: 7px 15px; font-size: 14px; font-weight: 600;
+  }
+  .punto { width: 7px; height: 7px; border-radius: 50%; background: var(--marca); }
+
+  h2 { font-size: 1.3rem; margin: 0 0 8px; letter-spacing: -0.01em; text-wrap: balance; }
+  section { padding-block: 40px; border-top: 1px solid var(--borde); }
+  p { margin: 0 0 14px; color: var(--texto-suave); }
+  strong { color: var(--texto); font-weight: 600; }
+  a { color: var(--marca); text-underline-offset: 2px; }
+
+  .rejilla { display: grid; gap: 12px; grid-template-columns: repeat(2, 1fr); margin-top: 20px; }
+  @media (max-width: 30rem) { .rejilla { grid-template-columns: 1fr; } }
+  .tarjeta {
+    background: var(--superficie); border: 1px solid var(--borde);
+    border-radius: var(--radio); padding: 18px 20px;
+  }
+  .tarjeta h3 { margin: 0 0 5px; font-size: 1rem; }
+  .tarjeta p { margin: 0; font-size: 14.5px; }
+
+  .cita {
+    border-left: 3px solid var(--marca); padding: 2px 0 2px 16px;
+    margin: 20px 0; color: var(--texto-suave); font-size: 15px;
+  }
+
+  footer {
+    padding-block: 32px 64px; border-top: 1px solid var(--borde);
+    color: var(--texto-tenue); font-size: 14px;
+  }
+  footer a { font-weight: 500; }
+  .enlaces { display: flex; flex-wrap: wrap; gap: 8px 18px; margin-bottom: 14px; }
+</style>
+</head>
+<body>
+<div class="envoltura">
+
+  <header>
+    <span class="marca">Fito</span>
+    <h1>Entrena, come, descansa<br>y progresa.</h1>
+    <p class="entrada">
+      Un entrenador y nutricionista en tu teléfono, hecho para Latinoamérica.
+      Sabe cuántas calorías tiene un encebollado y te explica por qué te manda
+      cada serie.
+    </p>
+    <span class="estado"><span class="punto"></span> En pruebas · próximamente en App Store</span>
+  </header>
+
+  <section>
+    <h2>Qué hace</h2>
+    <div class="rejilla">
+      <div class="tarjeta">
+        <h3>Entrena</h3>
+        <p>Plan semanal según tus días y tu equipo, con la carga que levantaste la última vez en cada ejercicio.</p>
+      </div>
+      <div class="tarjeta">
+        <h3>Come</h3>
+        <p>Registra por foto, voz o código de barras. Con comida de verdad de la región, no solo pechuga y arroz integral.</p>
+      </div>
+      <div class="tarjeta">
+        <h3>Descansa</h3>
+        <p>Lee tu sueño y tu variabilidad cardíaca desde Apple Salud y ajusta la intensidad del día.</p>
+      </div>
+      <div class="tarjeta">
+        <h3>Progresa</h3>
+        <p>Compara cada sesión con la última vez que entrenaste lo mismo. Lo único que de verdad dice si mejoraste.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Por qué se explica todo</h2>
+    <p>
+      La mayoría de las apps te dan un número y ya: tres series de diez, descansa
+      treinta segundos, come dos mil calorías. Fito te dice de dónde sale cada uno
+      y cuándo <em>no</em> aplica.
+    </p>
+    <p class="cita">
+      Un ejemplo: durante años se repitió que descansar poco entre series «define
+      más». Es falso. Comparando un minuto contra tres en personas entrenadas, el
+      grupo de tres minutos ganó más músculo y más fuerza — porque con poco
+      descanso llegas fatigado a la serie siguiente y acabas levantando menos en
+      total.
+    </p>
+    <p>
+      Los rangos de repeticiones, los tiempos de descanso y los tipos de serie
+      salen de meta-análisis, no de lo que se dice en el gimnasio. Y cuando algo
+      es una estimación nuestra y no un hecho demostrado, la app lo dice.
+    </p>
+  </section>
+
+  <section>
+    <h2>Pensado para la región</h2>
+    <p>
+      Las apps de nutrición conocen el <em>oatmeal</em> y no el bolón de verde.
+      Fito trae una base de comida latinoamericana —encebollado, hornado, menestra,
+      seco de pollo, fanesca, patacón— que crece con lo que registran quienes la
+      usan.
+    </p>
+    <p>
+      Precios en moneda local y en español neutro, sin traducciones de catálogo
+      gringo.
+    </p>
+  </section>
+
+  <section>
+    <h2>Tus datos</h2>
+    <p>
+      Fito maneja datos de salud. No los vendemos, no los usamos para publicidad
+      y no los compartimos con anunciantes. Puedes
+      <strong>borrar tu cuenta y todo su contenido desde la propia app</strong>,
+      de forma inmediata y sin pedir permiso a nadie.
+    </p>
+    <p>
+      Los detalles, sin letra pequeña, están en la
+      <a href="./privacidad.html">Política de Privacidad</a>.
+    </p>
+  </section>
+
+  <footer>
+    <div class="enlaces">
+      <a href="./privacidad.html">Privacidad</a>
+      <a href="./terminos.html">Términos de uso</a>
+      <a href="mailto:alejandro08martinacosta@gmail.com">Contacto</a>
+    </div>
+    <p style="margin:0">Fito · Hecho en Ecuador para Latinoamérica</p>
+  </footer>
+
+</div>
+</body>
+</html>

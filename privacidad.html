@@ -1,0 +1,218 @@
+<title>Privacidad Fito</title>
+<style>
+  :root {
+    color-scheme: light;
+    --fondo: #FBFBFA;
+    --superficie: #FFFFFF;
+    --borde: #E4E6E4;
+    --texto: #1A1D1C;
+    --texto-suave: #5A615E;
+    --texto-tenue: #858B88;
+    --marca: #1C9997;
+    --marca-suave: #EAF5F4;
+    --aviso-fondo: #FFF8E8;
+    --aviso-borde: #E8C77A;
+    --aviso-texto: #6B5115;
+    --radio: 12px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --fondo: #0F1211;
+      --superficie: #171B1A;
+      --borde: #2A302E;
+      --texto: #EDF0EF;
+      --texto-suave: #A7AFAC;
+      --texto-tenue: #7C8481;
+      --marca: #3FBAB8;
+      --marca-suave: #142A29;
+      --aviso-fondo: #2A2312;
+      --aviso-borde: #6B5A2A;
+      --aviso-texto: #E8D5A0;
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --fondo: #0F1211;
+    --superficie: #171B1A;
+    --borde: #2A302E;
+    --texto: #EDF0EF;
+    --texto-suave: #A7AFAC;
+    --texto-tenue: #7C8481;
+    --marca: #3FBAB8;
+    --marca-suave: #142A29;
+    --aviso-fondo: #2A2312;
+    --aviso-borde: #6B5A2A;
+    --aviso-texto: #E8D5A0;
+  }
+
+  body {
+    margin: 0;
+    background: var(--fondo);
+    color: var(--texto);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.65;
+    -webkit-text-size-adjust: 100%;
+  }
+  .envoltura {
+    max-width: 44rem;
+    margin: 0 auto;
+    padding: 16px;
+    padding-block: 48px 72px;
+  }
+  header { border-bottom: 1px solid var(--borde); padding-bottom: 24px; margin-bottom: 8px; }
+  .marca {
+    display: inline-block; font-size: 12px; font-weight: 700; letter-spacing: 0.1em;
+    text-transform: uppercase; color: var(--marca); margin-bottom: 10px;
+  }
+  h1 { font-size: clamp(1.75rem, 5vw, 2.25rem); line-height: 1.2; margin: 0 0 12px; text-wrap: balance; letter-spacing: -0.02em; }
+  .meta { color: var(--texto-tenue); font-size: 14px; margin: 0; }
+  h2 {
+    font-size: 1.2rem; margin: 40px 0 12px; text-wrap: balance; letter-spacing: -0.01em;
+    padding-top: 4px;
+  }
+  h3 { font-size: 1rem; margin: 24px 0 8px; color: var(--texto); }
+  p { margin: 0 0 14px; color: var(--texto-suave); }
+  ul { margin: 0 0 16px; padding-left: 22px; color: var(--texto-suave); }
+  li { margin-bottom: 7px; }
+  li::marker { color: var(--marca); }
+  strong { color: var(--texto); font-weight: 600; }
+  a { color: var(--marca); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+
+  .aviso {
+    background: var(--aviso-fondo); border: 1px solid var(--aviso-borde);
+    color: var(--aviso-texto); border-radius: var(--radio);
+    padding: 14px 16px; margin: 24px 0; font-size: 14.5px;
+  }
+  .aviso p { color: inherit; margin: 0; }
+
+  .tarjeta {
+    background: var(--superficie); border: 1px solid var(--borde);
+    border-radius: var(--radio); padding: 18px 20px; margin: 20px 0;
+  }
+  .tarjeta h3 { margin-top: 0; }
+  .tarjeta p:last-child, .tarjeta ul:last-child { margin-bottom: 0; }
+
+  .tabla-envoltura { overflow-x: auto; margin: 18px 0; }
+  table { border-collapse: collapse; width: 100%; font-size: 14.5px; min-width: 30rem; }
+  th, td { text-align: left; padding: 11px 12px; border-bottom: 1px solid var(--borde); vertical-align: top; }
+  th { font-weight: 600; color: var(--texto); font-size: 12.5px; text-transform: uppercase; letter-spacing: 0.04em; }
+  td { color: var(--texto-suave); }
+
+  footer {
+    margin-top: 56px; padding-top: 24px; border-top: 1px solid var(--borde);
+    color: var(--texto-tenue); font-size: 14px;
+  }
+  footer a { font-weight: 500; }
+</style>
+
+<div class="envoltura">
+  <header>
+    <span class="marca">Fito</span>
+    <h1>Política de Privacidad</h1>
+    <p class="meta">Última actualización: 28 de septiembre de 2026</p>
+  </header>
+
+  <p>Fito es una aplicación de entrenamiento y nutrición. Para funcionar necesita datos sobre tu cuerpo y tus hábitos, y varios de ellos son <strong>datos de salud</strong>. Este documento explica qué recogemos, por qué, con quién lo compartimos y cómo puedes recuperarlo o borrarlo.</p>
+
+  <div class="aviso">
+    <p><strong>Fito no es un servicio médico.</strong> No diagnostica, no trata enfermedades y no sustituye a un profesional de la salud. Consulta a un médico antes de empezar cualquier plan de alimentación o entrenamiento, especialmente si tienes una condición previa.</p>
+  </div>
+
+  <h2>1. Quién es responsable de tus datos</h2>
+  <p>El responsable del tratamiento es el titular de Fito. Para cualquier asunto relacionado con privacidad puedes escribir a <a href="mailto:alejandro08martinacosta@gmail.com">alejandro08martinacosta@gmail.com</a>.</p>
+
+  <h2>2. Qué datos recogemos</h2>
+
+  <h3>Datos que nos das directamente</h3>
+  <ul>
+    <li><strong>Cuenta:</strong> tu correo electrónico y contraseña (la contraseña se guarda cifrada; nunca la vemos).</li>
+    <li><strong>Perfil:</strong> nombre, edad, género, estatura, peso, medida de cintura, objetivo, nivel de actividad y país.</li>
+    <li><strong>Registros de salud:</strong> comidas y sus valores nutricionales, consumo de agua, horas de sueño, nivel de estrés y energía, suplementos, y tus medidas corporales a lo largo del tiempo.</li>
+    <li><strong>Entrenamiento:</strong> ejercicios realizados, series, repeticiones, pesos levantados, duración y volumen de cada sesión.</li>
+  </ul>
+
+  <h3>Datos generados por la aplicación</h3>
+  <ul>
+    <li><strong>Plan personalizado:</strong> tu plan de entrenamiento y tus objetivos calóricos calculados.</li>
+    <li><strong>Memoria del coach:</strong> las recomendaciones que la IA te ha dado, guardadas para poder darles seguimiento.</li>
+    <li><strong>Productos escaneados:</strong> los códigos de barras que consultas.</li>
+  </ul>
+
+  <h3>Cámara</h3>
+  <p>La aplicación pide acceso a la cámara para escanear códigos de barras y fotografiar tus comidas. <strong>Las fotos se envían a nuestro proveedor de inteligencia artificial para identificar el alimento y no se almacenan en nuestros servidores</strong> una vez procesado el análisis. No accedemos a tu galería ni a fotos que no tomes dentro de la aplicación.</p>
+
+  <h2>3. Para qué usamos tus datos</h2>
+  <div class="tabla-envoltura">
+    <table>
+      <thead>
+        <tr><th>Finalidad</th><th>Datos usados</th><th>Base legal</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Crear y mantener tu cuenta</td><td>Correo, contraseña</td><td>Ejecución del contrato</td></tr>
+        <tr><td>Calcular tus objetivos y tu plan</td><td>Perfil y medidas</td><td>Ejecución del contrato</td></tr>
+        <tr><td>Registrar y mostrar tu progreso</td><td>Comidas, agua, sueño, entrenos</td><td>Ejecución del contrato</td></tr>
+        <tr><td>Generar análisis y consejos con IA</td><td>Perfil, registros e historial</td><td>Consentimiento explícito</td></tr>
+        <tr><td>Gestionar tu suscripción</td><td>Identificador de compra</td><td>Ejecución del contrato</td></tr>
+        <tr><td>Mejorar la aplicación</td><td>Uso de funciones, de forma agregada</td><td>Interés legítimo</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p>No vendemos tus datos. No los usamos para publicidad. No los compartimos con anunciantes ni con intermediarios de datos.</p>
+
+  <h2>4. Con quién los compartimos</h2>
+  <p>Solo con los proveedores necesarios para que la aplicación funcione. Cada uno recibe únicamente lo imprescindible:</p>
+
+  <div class="tabla-envoltura">
+    <table>
+      <thead>
+        <tr><th>Proveedor</th><th>Para qué</th><th>Qué recibe</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Supabase</td><td>Base de datos y autenticación</td><td>Todos tus datos, cifrados en tránsito y en reposo</td></tr>
+        <tr><td>Anthropic (Claude)</td><td>Análisis de comidas y consejos del coach</td><td>Fotos de comida y un resumen de tus registros</td></tr>
+        <tr><td>RevenueCat</td><td>Gestión de suscripciones</td><td>Un identificador de usuario y el estado de tu compra</td></tr>
+        <tr><td>Open Food Facts</td><td>Base de datos pública de alimentos</td><td>Solo el código de barras consultado</td></tr>
+        <tr><td>Apple / Google</td><td>Procesamiento de pagos</td><td>Los datos de pago los gestionan ellos; nosotros nunca los vemos</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="tarjeta">
+    <h3>Sobre el uso de inteligencia artificial</h3>
+    <p>Cuando pides un análisis, enviamos a Anthropic un resumen de tus registros (progresión de cargas, sueño, volumen de entrenamiento y adherencia nutricional) junto con tu objetivo. Si usas la función de foto, enviamos también esa imagen.</p>
+    <p>Anthropic procesa estos datos para generar la respuesta y, conforme a sus condiciones para clientes de su API, <strong>no los utiliza para entrenar sus modelos</strong>. Puedes evitar por completo este tratamiento no usando las funciones de coach IA, análisis por foto ni análisis de etiquetas.</p>
+  </div>
+
+  <h2>5. Dónde se guardan y por cuánto tiempo</h2>
+  <p>Tus datos se almacenan en la infraestructura de Supabase, que opera servidores en la Unión Europea y en Estados Unidos. Si te encuentras en el Espacio Económico Europeo, las transferencias internacionales se amparan en las Cláusulas Contractuales Tipo aprobadas por la Comisión Europea.</p>
+  <p>Conservamos tus datos mientras tu cuenta esté activa. Si la eliminas desde la aplicación, el borrado es <strong>inmediato</strong>: tus registros se eliminan en ese momento y no guardamos copia. Solo se conserva aquello que la ley nos obligue a mantener, como los registros de facturación.</p>
+
+  <h2>6. Tus derechos</h2>
+  <p>Puedes ejercer en cualquier momento los siguientes derechos:</p>
+  <ul>
+    <li><strong>Acceso:</strong> obtener una copia de todos tus datos.</li>
+    <li><strong>Rectificación:</strong> corregir lo que esté mal, directamente desde tu perfil.</li>
+    <li><strong>Supresión:</strong> eliminar tu cuenta y todo su contenido, desde la propia aplicación en Perfil &rsaquo; Cuenta &rsaquo; Eliminar mi cuenta. El borrado es inmediato e irreversible; no conservamos copia.</li>
+    <li><strong>Portabilidad:</strong> recibir tus datos en un formato legible por máquina.</li>
+    <li><strong>Oposición y limitación:</strong> pedir que dejemos de tratar tus datos para determinadas finalidades.</li>
+    <li><strong>Retirar el consentimiento:</strong> dejar de usar las funciones de IA en cualquier momento, sin que ello afecte al resto de la aplicación.</li>
+  </ul>
+  <p>Para ejercerlos, escribe a <a href="mailto:alejandro08martinacosta@gmail.com">alejandro08martinacosta@gmail.com</a>. Respondemos en un plazo máximo de 30 días. Si resides en la Unión Europea y consideras que no hemos atendido bien tu solicitud, puedes reclamar ante la autoridad de control de tu país.</p>
+
+  <h2>7. Seguridad</h2>
+  <p>Ciframos las comunicaciones con TLS y los datos almacenados en reposo. El acceso a la base de datos está restringido mediante políticas por fila, de modo que <strong>cada usuario solo puede leer y escribir sus propios registros</strong>. Las claves de nuestros proveedores se guardan en el servidor y nunca se incluyen en la aplicación.</p>
+  <p>Ningún sistema es infalible. Si se produjera una brecha que afectara a tus datos, te lo notificaríamos y avisaríamos a la autoridad correspondiente dentro de los plazos legales.</p>
+
+  <h2>8. Menores de edad</h2>
+  <p>Fito no está dirigida a menores de 16 años y no recogemos sus datos de forma consciente. Si detectamos una cuenta de un menor, la eliminaremos. Si eres madre, padre o tutor y crees que un menor a tu cargo nos ha facilitado datos, escríbenos y los borraremos.</p>
+
+  <h2>9. Cambios en esta política</h2>
+  <p>Si modificamos esta política, actualizaremos la fecha del encabezado. Cuando el cambio sea sustancial, te lo avisaremos dentro de la aplicación antes de que entre en vigor.</p>
+
+  <footer>
+    <p>Fito · <a href="./terminos.html">Términos de Uso</a> · <a href="mailto:alejandro08martinacosta@gmail.com">Contacto</a></p>
+  </footer>
+</div>

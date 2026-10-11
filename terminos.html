@@ -1,0 +1,199 @@
+<title>Términos Fito</title>
+<style>
+  :root {
+    color-scheme: light;
+    --fondo: #FBFBFA;
+    --superficie: #FFFFFF;
+    --borde: #E4E6E4;
+    --texto: #1A1D1C;
+    --texto-suave: #5A615E;
+    --texto-tenue: #858B88;
+    --marca: #1C9997;
+    --marca-suave: #EAF5F4;
+    --aviso-fondo: #FFF8E8;
+    --aviso-borde: #E8C77A;
+    --aviso-texto: #6B5115;
+    --radio: 12px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --fondo: #0F1211;
+      --superficie: #171B1A;
+      --borde: #2A302E;
+      --texto: #EDF0EF;
+      --texto-suave: #A7AFAC;
+      --texto-tenue: #7C8481;
+      --marca: #3FBAB8;
+      --marca-suave: #142A29;
+      --aviso-fondo: #2A2312;
+      --aviso-borde: #6B5A2A;
+      --aviso-texto: #E8D5A0;
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --fondo: #0F1211;
+    --superficie: #171B1A;
+    --borde: #2A302E;
+    --texto: #EDF0EF;
+    --texto-suave: #A7AFAC;
+    --texto-tenue: #7C8481;
+    --marca: #3FBAB8;
+    --marca-suave: #142A29;
+    --aviso-fondo: #2A2312;
+    --aviso-borde: #6B5A2A;
+    --aviso-texto: #E8D5A0;
+  }
+
+  body {
+    margin: 0;
+    background: var(--fondo);
+    color: var(--texto);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.65;
+    -webkit-text-size-adjust: 100%;
+  }
+  .envoltura {
+    max-width: 44rem;
+    margin: 0 auto;
+    padding: 16px;
+    padding-block: 48px 72px;
+  }
+  header { border-bottom: 1px solid var(--borde); padding-bottom: 24px; margin-bottom: 8px; }
+  .marca {
+    display: inline-block; font-size: 12px; font-weight: 700; letter-spacing: 0.1em;
+    text-transform: uppercase; color: var(--marca); margin-bottom: 10px;
+  }
+  h1 { font-size: clamp(1.75rem, 5vw, 2.25rem); line-height: 1.2; margin: 0 0 12px; text-wrap: balance; letter-spacing: -0.02em; }
+  .meta { color: var(--texto-tenue); font-size: 14px; margin: 0; }
+  h2 { font-size: 1.2rem; margin: 40px 0 12px; text-wrap: balance; letter-spacing: -0.01em; padding-top: 4px; }
+  h3 { font-size: 1rem; margin: 24px 0 8px; color: var(--texto); }
+  p { margin: 0 0 14px; color: var(--texto-suave); }
+  ul { margin: 0 0 16px; padding-left: 22px; color: var(--texto-suave); }
+  li { margin-bottom: 7px; }
+  li::marker { color: var(--marca); }
+  strong { color: var(--texto); font-weight: 600; }
+  a { color: var(--marca); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+
+  .aviso {
+    background: var(--aviso-fondo); border: 1px solid var(--aviso-borde);
+    color: var(--aviso-texto); border-radius: var(--radio);
+    padding: 14px 16px; margin: 24px 0; font-size: 14.5px;
+  }
+  .aviso p { color: inherit; margin: 0; }
+  .aviso p + p { margin-top: 10px; }
+
+  .tarjeta {
+    background: var(--superficie); border: 1px solid var(--borde);
+    border-radius: var(--radio); padding: 18px 20px; margin: 20px 0;
+  }
+  .tarjeta h3 { margin-top: 0; }
+  .tarjeta p:last-child, .tarjeta ul:last-child { margin-bottom: 0; }
+
+  .tabla-envoltura { overflow-x: auto; margin: 18px 0; }
+  table { border-collapse: collapse; width: 100%; font-size: 14.5px; min-width: 32rem; }
+  th, td { text-align: left; padding: 11px 12px; border-bottom: 1px solid var(--borde); vertical-align: top; }
+  th { font-weight: 600; color: var(--texto); font-size: 12.5px; text-transform: uppercase; letter-spacing: 0.04em; }
+  td { color: var(--texto-suave); }
+  td.precio { font-variant-numeric: tabular-nums; white-space: nowrap; }
+
+  footer {
+    margin-top: 56px; padding-top: 24px; border-top: 1px solid var(--borde);
+    color: var(--texto-tenue); font-size: 14px;
+  }
+  footer a { font-weight: 500; }
+</style>
+
+<div class="envoltura">
+  <header>
+    <span class="marca">Fito</span>
+    <h1>Términos de Uso</h1>
+    <p class="meta">Última actualización: 28 de septiembre de 2026</p>
+  </header>
+
+  <p>Estos términos regulan el uso de la aplicación Fito. Al crear una cuenta aceptas lo que se describe aquí. Si no estás de acuerdo con alguna parte, no uses la aplicación.</p>
+
+  <div class="aviso">
+    <p><strong>Fito no es un servicio médico.</strong> Los planes de entrenamiento, los objetivos calóricos y los consejos generados por inteligencia artificial son orientativos y se basan en fórmulas generales y en los datos que tú introduces. No constituyen diagnóstico, tratamiento ni prescripción.</p>
+    <p>Consulta a un médico antes de iniciar cualquier programa de ejercicio o cambio en tu alimentación, sobre todo si estás embarazada, tienes una lesión, una condición cardíaca, metabólica o un trastorno de la conducta alimentaria. Si sientes dolor o mareo mientras entrenas, detente y busca atención médica.</p>
+  </div>
+
+  <h2>1. Tu cuenta</h2>
+  <p>Necesitas una cuenta para usar la aplicación. Debes tener al menos <strong>16 años</strong>. Eres responsable de mantener tu contraseña en secreto y de toda la actividad que ocurra en tu cuenta. Avísanos si detectas un acceso no autorizado.</p>
+  <p>Los datos que introduces deben ser tuyos y veraces. La aplicación calcula calorías y cargas a partir de ellos: si son incorrectos, los resultados también lo serán.</p>
+
+  <h2>2. Suscripciones</h2>
+  <p>Fito ofrece un <strong>periodo de prueba gratuito de 7 días</strong> con acceso completo. Al terminar, algunas funciones quedan limitadas salvo que contrates un plan.</p>
+
+  <h3>Planes disponibles</h3>
+  <div class="tabla-envoltura">
+    <table>
+      <thead>
+        <tr><th>Plan</th><th>Qué incluye</th><th>Duración</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>Básico</strong></td><td>Registro de comidas, agua, entrenamientos y descanso</td><td>Mensual</td></tr>
+        <tr><td><strong>Estándar</strong></td><td>Todo lo anterior más coach IA, análisis nutricional avanzado y gráficos de progreso</td><td>Mensual o anual</td></tr>
+        <tr><td><strong>Premium</strong></td><td>Todo lo anterior más mapeo muscular 3D</td><td>Mensual</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p>Los precios varían según el país y se muestran siempre en tu moneda local dentro de la aplicación antes de confirmar la compra. El precio exacto aplicable a tu cuenta es el que aparece en la pantalla de pago de la App Store en el momento de contratar.</p>
+
+  <div class="tarjeta">
+    <h3>Renovación automática</h3>
+    <p>Todas las suscripciones son <strong>de renovación automática</strong>. Esto significa que:</p>
+    <ul>
+      <li>El pago se carga a tu cuenta de Apple ID al confirmar la compra.</li>
+      <li>La suscripción <strong>se renueva automáticamente</strong> salvo que la canceles al menos <strong>24 horas antes</strong> del final del periodo en curso.</li>
+      <li>El cobro de la renovación se realiza dentro de las 24 horas previas al final del periodo, por el precio del plan contratado.</li>
+      <li>Puedes gestionar y cancelar tu suscripción desde los Ajustes de tu dispositivo, en la sección de tu cuenta de Apple ID, en cualquier momento.</li>
+      <li>Si cancelas, conservas el acceso hasta que termine el periodo ya pagado. <strong>No se hacen reembolsos parciales</strong> por periodos iniciados.</li>
+      <li>Si contratas una suscripción durante el periodo de prueba gratuito, la parte no disfrutada de esa prueba se pierde.</li>
+    </ul>
+  </div>
+
+  <h3>Reembolsos</h3>
+  <p>Las compras se procesan a través de la App Store, por lo que los reembolsos los gestiona Apple según sus propias políticas. Puedes solicitarlos en <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener">reportaproblem.apple.com</a>. Nosotros no podemos emitir reembolsos directamente.</p>
+
+  <h2>3. Uso aceptable</h2>
+  <p>Al usar Fito te comprometes a no:</p>
+  <ul>
+    <li>Compartir tu cuenta ni revender el acceso.</li>
+    <li>Intentar acceder a datos de otros usuarios o a nuestros sistemas internos.</li>
+    <li>Usar la aplicación como intermediaria para acceder a servicios de terceros por vías no previstas.</li>
+    <li>Descompilar, copiar o crear obras derivadas de la aplicación.</li>
+    <li>Introducir datos de terceros sin su permiso.</li>
+  </ul>
+  <p>Podemos suspender cuentas que incumplan estos puntos.</p>
+
+  <h2>4. Contenido generado por inteligencia artificial</h2>
+  <p>El coach, el análisis del día y el reconocimiento de alimentos por foto se generan con modelos de lenguaje. Como toda tecnología de este tipo, <strong>puede equivocarse</strong>: subestimar o sobreestimar calorías, identificar mal un alimento o proponer una carga inadecuada para tu nivel.</p>
+  <p>Trata sus respuestas como una referencia, no como una instrucción a seguir sin criterio. Verifica los valores nutricionales cuando la exactitud sea importante para ti, y ajusta las cargas a lo que tu cuerpo tolere.</p>
+
+  <h2>5. Propiedad</h2>
+  <p>La aplicación, su diseño, su código y su marca nos pertenecen. <strong>Los datos que introduces siguen siendo tuyos</strong>: puedes exportarlos o eliminarlos cuando quieras, como se explica en la <a href="./privacidad.html">Política de Privacidad</a>. Nos concedes únicamente el permiso necesario para procesarlos y ofrecerte el servicio.</p>
+
+  <h2>6. Disponibilidad</h2>
+  <p>Hacemos lo posible por mantener el servicio funcionando, pero no garantizamos disponibilidad ininterrumpida. Puede haber mantenimientos, fallos de proveedores o interrupciones fuera de nuestro control. Podemos modificar o retirar funciones; si un cambio reduce de forma sustancial lo que incluye tu plan, te avisaremos con antelación.</p>
+
+  <h2>7. Limitación de responsabilidad</h2>
+  <p>La aplicación se ofrece «tal cual». En la medida en que lo permita la ley aplicable, no respondemos por lesiones, problemas de salud ni daños derivados del uso de los planes, cálculos o consejos de la aplicación. Tú decides cómo entrenar y qué comer.</p>
+  <p>Nada en estos términos limita los derechos que te reconozca la normativa de consumo de tu país, que prevalece sobre lo aquí dispuesto.</p>
+
+  <h2>8. Cancelación</h2>
+  <p>Puedes eliminar tu cuenta cuando quieras desde la aplicación o escribiéndonos. Al hacerlo se borran tus datos conforme a la Política de Privacidad. Recuerda que <strong>eliminar la cuenta no cancela la suscripción</strong>: eso debes hacerlo desde los ajustes de tu Apple ID.</p>
+
+  <h2>9. Cambios en estos términos</h2>
+  <p>Si los modificamos, actualizaremos la fecha del encabezado y te avisaremos dentro de la aplicación cuando el cambio sea relevante. Seguir usando Fito después de esa notificación implica aceptar la nueva versión.</p>
+
+  <h2>10. Contacto</h2>
+  <p>Para cualquier duda sobre estos términos: <a href="mailto:alejandro08martinacosta@gmail.com">alejandro08martinacosta@gmail.com</a>.</p>
+
+  <footer>
+    <p>Fito · <a href="./privacidad.html">Política de Privacidad</a> · <a href="mailto:alejandro08martinacosta@gmail.com">Contacto</a></p>
+  </footer>
+</div>
